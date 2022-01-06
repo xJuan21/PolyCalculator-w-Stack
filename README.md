@@ -14,6 +14,7 @@ EXECUTION: Use the Makefile in the terminal and run the executable. The Menu wil
 In order to complete this first Project, it was needed to complete the following strategies:
 
 1.- Initialize:
+	
 	1.a A Stack class (called MyStack) that would allow to work with attributes and method from the Polynomial class or any other Data Type or Object.
 	
 	1.b A main class with multiple methods that also interacts with the Polynomial and MyStack classes, which permits efectiveness during the management of Data.
