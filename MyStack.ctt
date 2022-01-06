@@ -1,0 +1,54 @@
+/*
+ * FILE: MyStack.ctt
+ * AUTHOR: Juan Mota
+ * DATE: 02/2021
+ * PURPOSE:
+ */
+
+#include "MyStack.hpp"
+
+using namespace std;
+
+//Insert a new Term on top of the Stack.
+template <class X>
+void
+MyStack<X>::push(const X& somethingToPush)
+{
+  list<X>::push_front(somethingToPush);
+}
+
+//Pop the first element out of the Stack.
+template <class X>
+void
+MyStack<X>::pop()
+{
+  if (!isEmpty())
+    list<X>::pop_front();
+  else
+    cout << "The current accumulator is Empty!" << endl; 
+}
+
+//Return the first element on top of the Stack.
+template <class X>
+const X&
+MyStack<X>::top() const
+{
+   return list<X>::front();
+}
+
+//Check if the current Stack is empty.
+template <class X>
+bool
+MyStack<X>::isEmpty() const
+{
+  return list<X>::empty();
+}
+
+//Clear the current Stack.
+template <class X>
+void
+MyStack<X>::Clear()
+{
+  list<X>::clear();
+}
+
